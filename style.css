@@ -1,0 +1,224 @@
+/* some global values/defaults */
+html {
+  overflow-y: scroll;
+}
+
+body {
+  background-color: #FFFFFF;
+  color: #513B56;
+  font-family: "Optima", "Segoe", "Segoe UI", "Candara", "Calibri", "Arial", "sans-serif";
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+}
+
+td {
+  background-color: #F6FFFF;
+}
+
+th {
+  background-color: #525174;
+  color: #EDFCFF;
+}
+
+/* top bar */
+.topbar {
+  background-color: #DDDDDD;  /* #85a0ad; */
+  overflow: hidden;
+  margin-left: calc(240px + 0% - 10px);
+  margin-top: 20px;
+  margin-right: 0%; 
+  min-width: 300px
+}
+
+.sidenav {
+  height: 100%;
+  width: 240px;
+  position: fixed;
+  margin-left: 0%; 
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #EDFCFF;  /* #85a0ad */
+  padding-top: 45px;
+}
+
+/* div for all the links in the top navigation bar */
+/*
+.topbarlinks {
+  float: right;
+}
+*/
+
+/* div for title and tag line in top bar */
+.topbartitleandtag {
+  float: right;
+  color: #666666;
+  padding: 14px;
+  vertical-align: middle
+}
+
+/* div for title on small displays */
+.sidenavtitle {
+  float: right;
+  color: #FFFFFF;
+  font-size: 14px;
+  padding: 14px;
+  vertical-align: bottom;
+  display: none
+}
+
+/* div for title in top bar */
+.topbartitle {
+  font-size: 30px;
+  padding: 6px;
+}
+
+/* div for tag line in top bar */
+.topbartagline {
+  font-size: 20px;
+  padding: 6px;
+}
+
+.logo {
+  position: relative
+}
+
+.logo img {
+  float: left;
+  padding: 14px 16px 35px 16px;
+  text-align: center;
+  width: 200px
+}
+
+.sidenav a {
+  padding: 6px 16px 6px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #a9a8c0;
+  font-weight: 500;
+  display: block;
+}
+
+.sidenav a.active {
+  color: #EDFCFF;
+  text-decoration: none;
+  font-weight: 500
+}
+
+.sidenav a:hover {
+  color: #EDFCFF;
+  font-weight: 700;
+}
+
+.main {
+  margin-left: calc(0% + 240px);
+  margin-right: 0%; 
+  padding: 20px 20px;
+  min-width: 300px;
+  font-size: 15px
+}
+
+/*
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+*/
+
+.main p {
+  text-align: justify
+}
+
+.main a {
+  color: #348AA7
+}
+
+.main a:visited {
+  color: #525174
+}
+
+@media screen and (max-width: 950px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding-top: 8px;
+  }
+  .logo { float: right; vertical-align: middle }
+  .logo img { float: right; width: 285px; padding: 8px 16px 35px 16px; }
+  .topbartitleandtag {
+    float: left;
+    padding: 0px;
+    vertical-align: top
+  }    
+  ul {
+    padding-left: 20px;
+  }
+  .topbar {
+    display: none
+  }
+  .sidenavtitle {
+    position: absolute;
+    right: 6px;
+    bottom: 4px;
+    display: block;
+    font-weight: 500;
+  }
+  .sidenav a {
+    font-size: 14px;
+  }
+  .main {
+    margin-left: 1px;
+    font-size: 12px
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .sidenav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 0px;
+    padding-bottom: 8px;
+    text-align:center
+  }
+  .logo { 
+    float: none;
+    text-align: center;
+    width: 100%
+  }
+  .logo img {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 285px; 
+    padding: 8px 8px 8px 8px
+  }
+  .sidenavtitle { 
+    float: none;
+    position: static;
+    text-align: center;
+    padding: 0px 8px 8px 8px
+  }
+  .sidenav a {
+    display: inline;
+    font-size: 11px
+  }
+  .main {
+    font-size: 11px
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .sidenav {
+    min-width: 330px
+  }
+  .sidenav a {
+    font-size: 10px;
+    padding: 4px 10px 4px 10px;
+  }
+}
